@@ -619,3 +619,33 @@ srOnlyStyle.textContent = `
 document.head.appendChild(srOnlyStyle);
 
 console.log('%c✨ Portfolio loaded successfully!', 'color: #00bfae; font-size: 14px;');
+
+// ===================================
+// Resume Download (force direct download)
+// ===================================
+const downloadBtn = document.getElementById('downloadResume');
+if (downloadBtn) {
+    downloadBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const url = downloadBtn.getAttribute('href') || 'Darshan_Naidu_Resume.pdf';
+        try {
+            const resp = await fetch(url, { cache: 'no-store' });
+            if (!resp.ok) throw new Error('Network response was not ok');
+            const blob = await resp.blob();
+            const blobUrl = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = blobUrl;
+            a.download = url.split('/').pop() || 'resume.pdf';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(blobUrl);
+            if (typeof announcePageChange === 'function') announcePageChange('Resume download started');
+        } catch (err) {
+            console.error('Resume download failed:', err);
+            // Fallback: open PDF in a new tab without showing an alert
+            window.open(url, '_blank');
+        }
+    });
+}

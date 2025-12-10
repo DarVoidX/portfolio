@@ -663,6 +663,48 @@ body {
     transform: translateY(-3px);
 }
 
+/* Resume Section */
+.resume-section {
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+}
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: start;
+    justify-items: center;
+}
+.resume-card {
+    background: rgba(26,26,26,0.6);
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid rgba(0,191,174,0.12);
+    width: 100%;
+    max-width: 720px;
+}
+.resume-title {
+    font-family: var(--font-secondary);
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+.resume-summary {
+    color: var(--gray);
+    margin-bottom: 18px;
+}
+.resume-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 14px;
+}
+/* embedded preview removed */
+
+@media (max-width: 768px) {
+    .resume-content {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Tech Icons */
 .tech-icons {
     display: grid;
