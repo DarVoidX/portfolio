@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Darshan Naidu - Computer Science Engineering Student & Developer Portfolio">
+    <meta name="keywords" content="Darshan Naidu, CSE, Developer, Portfolio, Deepfake Detection">
+    <meta name="author" content="Darshan Naidu">
+    <title>Darshan Naidu | CSE Student & Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text" aria-label="Darshan Naidu" title="Darshan Naidu">𝔻ℕ</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gold-text">Darshan Naidu</span>
+                </h1>
+                <p class="hero-subtitle">Computer Science Engineering Student & Developer</p>
+                <p class="hero-description">
+                    Crafting innovative solutions through code | Passionate about AI & Web Development
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <!-- AI box removed -->
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gold-text">Me</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="profile.jpg" alt="Darshan Naidu" class="profile-image">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-heading">Hello! I'm Darshan Naidu</h3>
+                    <p class="about-description">
+                        𝙄 𝙖𝙢 𝙖 𝙥𝙖𝙨𝙨𝙞𝙤𝙣𝙖𝙩𝙚 𝘾𝙤𝙢𝙥𝙪𝙩𝙚𝙧 𝙎𝙘𝙞𝙚𝙣𝙘𝙚 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧𝙞𝙣𝙜 𝙨𝙩𝙪𝙙𝙚𝙣𝙩 𝙖𝙩 𝘼𝙙𝙞𝙘𝙝𝙪𝙣𝙘𝙝𝙖𝙣𝙖𝙜𝙞𝙧𝙞 𝙄𝙣𝙨𝙩𝙞𝙩𝙪𝙩𝙚 𝙤𝙛 𝙏𝙚𝙘𝙝𝙣𝙤𝙡𝙤𝙜𝙮, 𝘾𝙝𝙞𝙠𝙠𝙢𝙖𝙜𝙖𝙡𝙪𝙧, 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙞𝙣 𝙢𝙮 𝟯𝙧𝙙 𝙮𝙚𝙖𝙧. 𝘽𝙤𝙧𝙣 𝙞𝙣 𝟮𝟬𝟬𝟱, 𝙄’𝙫𝙚 𝙖𝙡𝙬𝙖𝙮𝙨 𝙗𝙚𝙚𝙣 𝙙𝙧𝙖𝙬𝙣 𝙩𝙤 𝙝𝙤𝙬 𝙩𝙚𝙘𝙝𝙣𝙤𝙡𝙤𝙜𝙮 𝙘𝙖𝙣 𝙨𝙝𝙖𝙥𝙚 𝙩𝙝𝙚 𝙛𝙪𝙩𝙪𝙧𝙚 𝙖𝙣𝙙 𝙘𝙧𝙚𝙖𝙩𝙚 𝙞𝙢𝙥𝙖𝙘𝙩.
+                    </p>
+                    <p class="about-description">
+                        𝙄 𝙖𝙢 𝙡𝙚𝙖𝙧𝙣𝙞𝙣𝙜 𝙘𝙤𝙙𝙞𝙣𝙜 𝙬𝙞𝙩𝙝 𝘾, 𝘾++, 𝙖𝙣𝙙 𝙋𝙮𝙩𝙝𝙤𝙣, 𝙖𝙣𝙙 𝙜𝙧𝙖𝙙𝙪𝙖𝙡𝙡𝙮 𝙚𝙭𝙥𝙡𝙤𝙧𝙞𝙣𝙜 𝙅𝙖𝙫𝙖 𝙖𝙣𝙙 𝙬𝙚𝙗 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙢𝙚𝙣𝙩. 𝙈𝙮 𝙡𝙚𝙖𝙧𝙣𝙞𝙣𝙜 𝙟𝙤𝙪𝙧𝙣𝙚𝙮 𝙞𝙨 𝙙𝙧𝙞𝙫𝙚𝙣 𝙗𝙮 𝙘𝙪𝙧𝙞𝙤𝙨𝙞𝙩𝙮, 𝙥𝙧𝙖𝙘𝙩𝙞𝙘𝙚, 𝙖𝙣𝙙 𝙖 𝙙𝙚𝙨𝙞𝙧𝙚 𝙩𝙤 𝙜𝙧𝙤𝙬 𝙚𝙫𝙚𝙧𝙮 𝙙𝙖𝙮.
+                    </p>
+                    <p class="about-description">
+                        𝘽𝙚𝙮𝙤𝙣𝙙 𝙢𝙮 𝙨𝙩𝙪𝙙𝙞𝙚𝙨, 𝙄 𝙚𝙣𝙟𝙤𝙮 𝙚𝙭𝙥𝙡𝙤𝙧𝙞𝙣𝙜 𝙣𝙚𝙬 𝙩𝙚𝙘𝙝𝙣𝙤𝙡𝙤𝙜𝙞𝙚𝙨, 𝙩𝙧𝙮𝙞𝙣𝙜 𝙣𝙚𝙬 𝙩𝙤𝙤𝙡𝙨, 𝙖𝙣𝙙 𝙗𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙖 𝙨𝙩𝙚𝙖𝙙𝙮 𝙥𝙖𝙩𝙝 𝙩𝙤𝙬𝙖𝙧𝙙 𝙗𝙚𝙘𝙤𝙢𝙞𝙣𝙜 𝙖 𝙬𝙚𝙡𝙡-𝙧𝙤𝙪𝙣𝙙𝙚𝙙 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧. 𝙄 𝙖𝙢 𝙖𝙡𝙨𝙤 𝙥𝙡𝙖𝙣𝙣𝙞𝙣𝙜 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩 𝙘𝙤𝙣𝙩𝙧𝙞𝙗𝙪𝙩𝙞𝙣𝙜 𝙩𝙤 𝙤𝙥𝙚𝙣-𝙨𝙤𝙪𝙧𝙘𝙚 𝙨𝙤𝙤𝙣.
+                    </p>
+                    
+                    <!-- Education Timeline -->
+                    <div class="education-timeline">
+                        <h4 class="timeline-title">Education Journey</h4>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h5>BE – Computer Science Engineering</h5>
+                                <p class="timeline-institution">Adichunchanagiri Institute of Technology, Chikmagalur</p>
+                                <p class="timeline-year">3rd Year | 2023 - 2027</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h5>Pre-University (11th - 12th)</h5>
+                                <p class="timeline-institution">Government Junior College Chikmagalur</p>
+                                <p class="timeline-year">2020 - 2022</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h5>High School (8th - 10th)</h5>
+                                <p class="timeline-institution">JVS – Jilla Vokkaligara Sangha</p>
+                                <p class="timeline-year">2017 - 2020</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h5>Primary School (1st - 7th)</h5>
+                                <p class="timeline-institution">GURU KULA VIDYA SAMASTHE</p>
+                                <p class="timeline-year">2010 - 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="gold-text">Skills</span></h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-logo">C</span>
+                                <span class="skill-name">C</span>
+                                <div class="skill-meter" data-level="4" aria-label="C skill level: Advance">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-logo">C++</span>
+                                <span class="skill-name">C++</span>
+                                <div class="skill-meter" data-level="4" aria-label="C++ skill level: Advance">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-python skill-icon" aria-hidden="true"></i>
+                                <span class="skill-name">Python</span>
+                                <div class="skill-meter" data-level="5" aria-label="Python skill level: Advance">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-java skill-icon" aria-hidden="true"></i>
+                                <span class="skill-name">Java</span>
+                                <div class="skill-meter" data-level="3" aria-label="Java skill level: Intermediate">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Web Development
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-html5 skill-icon" aria-hidden="true"></i>
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-meter" data-level="5" aria-label="HTML5 skill level: Advance">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-css3-alt skill-icon" aria-hidden="true"></i>
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-meter" data-level="5" aria-label="CSS3 skill level: Advance">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-js skill-icon" aria-hidden="true"></i>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-meter" data-level="4" aria-label="JavaScript skill level: Advance">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-mobile-alt skill-icon" aria-hidden="true"></i>
+                                <span class="skill-name">Responsive Design</span>
+                                <div class="skill-meter" data-level="5" aria-label="Responsive design skill level: Advance">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="meter-label">Advance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-python"></i>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-brain"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-windows"></i>
+                            <span>Windows Server</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="gold-text">Projects</span></h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Showcasing my recent work and innovations</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Deepfake Detection Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="deepfake iamge.png" alt="Deepfake Detection System" class="project-img">
+                        <div class="project-overlay">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Deepfake Detection System</h3>
+                            <div class="project-badge">AI/ML</div>
+                        </div>
+                        <p class="project-description">
+                            An advanced machine learning system designed to detect deepfake content in both images 
+                            and videos. Utilizing state-of-the-art deep learning algorithms and computer vision 
+                            techniques to identify manipulated media with high accuracy. This project addresses 
+                            the growing concern of misinformation and digital content authenticity in the modern era.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-tag"><i class="fas fa-brain"></i> TensorFlow</span>
+                            <span class="tech-tag"><i class="fas fa-eye"></i> OpenCV</span>
+                            <span class="tech-tag"><i class="fas fa-network-wired"></i> Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DarVoidX" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for Future Projects -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="portfolio image.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <div class="project-badge">Web Dev</div>
+                        </div>
+                        <p class="project-description">
+                            A modern, responsive portfolio website built with pure HTML, CSS, and JavaScript. 
+                            Features a sleek black and gold theme, smooth animations, and an Apple-inspired 
+                            design aesthetic. Showcases projects, skills, and professional journey with 
+                            interactive elements and optimized performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DarVoidX" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#home" class="project-btn project-btn-secondary">
+                                <i class="fas fa-external-link-alt"></i> You're Here!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon Card -->
+                <div class="project-card coming-soon">
+                    <div class="project-image">
+                        <img src="project cooming soon.png" alt="Coming Soon Projects" class="project-img">
+                        <div class="project-overlay">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">More Projects Coming Soon</h3>
+                            <div class="project-badge">In Progress</div>
+                        </div>
+                        <p class="project-description">
+                            Currently working on exciting new projects involving web development, machine learning, 
+                            and innovative solutions. Stay tuned for updates on my latest work and contributions 
+                            to the tech community.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fas fa-lightbulb"></i> Innovation</span>
+                            <span class="tech-tag"><i class="fas fa-cogs"></i> Development</span>
+                            <span class="tech-tag"><i class="fas fa-star"></i> Excellence</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DarVoidX" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> Follow Progress
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="gold-text">Touch</span></h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Let's connect and create something amazing together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Talk</h3>
+                    <p class="contact-text">
+                        I'm always open to discussing new projects, creative ideas, or opportunities 
+                        to be part of your vision. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <h4>Email</h4>
+                                <a href="mailto:darshannaidu696@gmail.com">darshannaidu696@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <h4>Location</h4>
+                                <p>Chikmagalur, Karnataka, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <h4>Education</h4>
+                                <p>Adichunchanagiri Institute of Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/DarVoidX" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/darshan-naidu-49603632a/" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dar.shanckm" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:darshannaidu696@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2025 <span class="gold-text">Darshan Naidu</span>. All rights reserved.
+                </p>
+                <p class="footer-subtext">
+                    Designed & Built with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
